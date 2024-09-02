@@ -5,6 +5,15 @@ export default class Game {
     this.level = 1;
   }
 
+  init() {
+    const item = document.createElement("div")
+    item.classList.add("item");
+
+    for (let i = 0; i < 16; i++) {
+      this._element.appendChild(item.cloneNode());
+    }
+  }
+
   start() {
     const items = this._element.querySelectorAll(".item");
 

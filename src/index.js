@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const game = new Game(document.querySelector(".container"));
   window.game = game;
 
+  game.init();
+
   document.querySelector(".start").addEventListener("click", () => {
     game.start();
   });
